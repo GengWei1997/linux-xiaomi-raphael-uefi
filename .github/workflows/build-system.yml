@@ -114,7 +114,7 @@ jobs:
             echo "single_kernel_version=${KERN_VER}" >> $GITHUB_OUTPUT
             echo "single_os_version=${OS_VER}" >> $GITHUB_OUTPUT
             
-            MATRIX="[{"system_type":"$SYS_TYPE","kernel_version":"$KERN_VER","bootstrap_tool":"$TOOL","debian_version":"$DEB_VER","ubuntu_version":"$UBU_VER","desktop_env":"$DESKTOP_ENV"}]"
+            MATRIX="[{\"system_type\":\"$SYS_TYPE\",\"kernel_version\":\"$KERN_VER\",\"bootstrap_tool\":\"$TOOL\",\"debian_version\":\"$DEB_VER\",\"ubuntu_version\":\"$UBU_VER\",\"desktop_env\":\"$DESKTOP_ENV\"}]"
           else
             # 并行模式：使用纯 bash 生成 JSON
             MATRIX="["
